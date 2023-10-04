@@ -1,9 +1,7 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <HelloWorld msg="push noti in Vite + Vue" />
+  <router-view></router-view>
 </template>
 
 <style scoped></style>

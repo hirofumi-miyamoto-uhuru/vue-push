@@ -2,10 +2,11 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 import { registerSW } from 'virtual:pwa-register';
+import router from "./router";
 
 registerSW();
 
-createApp(App).mount('#app')
+createApp(App).use(router).mount('#app')
 
 const isPWA = window.matchMedia("(display-mode: standalone)").matches;
 
